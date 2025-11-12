@@ -11,15 +11,22 @@ import {
 import PickYourKit from './components/PickYourKit';
 import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
+import MuiDialog from './components/MuiDialog';
 
 function Home() {
   const [count, setCount] = useState(0)
 
-  //maybe this will be Kits.ts with each kit as an entry
+  // maybe this will be Kits.ts with each kit as an object/entry
   let items = ["kit 1","kit 2","kit 3", "etc"];
 
   return (
     <>
+      <MuiDialog /* Dialogs.ts here when you come back tyyyyy <3 */
+        title='YOUR STARTING POINT FOR CONFIDENCE'
+        textDialogDescription='Eco-luxury beauty kits with tutorials that teach artistry step by step'
+        textUserAction='JOIN THE LIST FOR FIRST ACCESS TO OUR LIMITED LAUNCH'
+        textDialogTagLine='Because artistry should be inclusive, sustainable, and empowering'
+      />
       <h1 id="header">Go BOLD, Go VANTA</h1>
       <PickYourKit
         items={items}

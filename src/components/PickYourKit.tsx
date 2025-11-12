@@ -7,7 +7,7 @@ interface Props {
     onSelectItem: (item: string) => void;
 }
 
-function PickYourKit({items, heading, onSelectItem }: Props) {
+export default function PickYourKit({items, heading, onSelectItem }: Props) {
     const [count, setCount] = useState(0);
 
     // Hook
@@ -34,5 +34,3 @@ function PickYourKit({items, heading, onSelectItem }: Props) {
         </>
     );
 }
-
-export default PickYourKit;
